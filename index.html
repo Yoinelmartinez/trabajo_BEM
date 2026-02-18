@@ -1,35 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House BEM</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>10 Componentes Flexbox + BEM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="punto_c.css" />
 </head>
 <body>
 
-<main>
-  <div class="cuadro">
-    <div class="cuadrado_azul">1</div>
-    <div class="cuadrado_azul">2</div>
-    <div class="cuadrado_azul">3</div>
-    <div class="house">
-    <div class="kitchen box">
-        <p class="kitchen-item">nevera</p>
-        <p class="kitchen-item">estufa</p>
-        <p class="kitchen-item kitchen-item--new">air fryer</p>
-    <div class="bedroom box">
-        <p class="bedroom-item">somier</p>
-        <p class="bedroom-item">mesa de noche</p>
-        <p class="bedroom-item bedroom-item--new">peinadora</p>
-    <div class="livingroom box">
-        <p class="livingroom-item">mesa</p>
-        <p class="livingroom-item">sofa</p>
-        <p class="livingroom-item livingroom-item--new">televisor</p>
-    </div>
+  <header class="page-header">
+    <h1 class="page-header__title">10 Componentes · Flexbox + BEM</h1>
+  </header>
 
-    </div>
-</main>
+  <!-- ══════════════════════════════════════════
+       1. BARRA DE NAVEGACIÓN
+  ══════════════════════════════════════════ -->
+  <section class="demo-section">
+    <p class="demo-label">01 · Barra de Navegación</p>
 
+    <nav class="navbar">
+      <a href="#" class="navbar__brand">Marca</a>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="#" class="navbar__link">Inicio</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">Portafolio</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link navbar__link--cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       2. TARJETA DE PRODUCTO
+  ══════════════════════════════════════════ -->
+  <section class="demo-section">
+    <p class="demo-label">02 · Tarjeta de Producto</p>
+
+    <div class="product-card">
+      <div class="product-card__image">
+        <span class="product-card__badge">Nuevo</span>
+      </div>
+      <div class="product-card__body">
+        <h3 class="product-card__title">Auriculares Pro X</h3>
+        <p class="product-card__description">Sonido envolvente 360° con cancelación activa de ruido y 40 h de autonomía.</p>
+        <span class="product-card__price">$189.99</span>
+      </div>
+      <button class="product-card__btn">Añadir al carrito</button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       3. GALERÍA DE IMÁGENES
+  ══════════════════════════════════════════ -->
+  <section class="demo-section">
+    <p class="demo-label">03 · Galería de Imágenes</p>
+
+    <div class="gallery">
+      <div class="gallery__item gallery__item--tall">1</div>
+      <div class="gallery__item">2</div>
+      <div class="gallery__item">3</div>
+      <div class="gallery__item gallery__item--wide">4</div>
+      <div class="gallery__item">5</div>
+      <div class="gallery__item">6</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       4. FORMULARIO DE CONTACTO
+  ══════════════════════════════════════════ -->
+  <section class="demo-section">
+    <p class="demo-label">04 · Formulario de Contacto</p>
+
+    <form class="contact-form">
+      <div class="contact-form__row">
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="name">Nombre</label>
+          <input class="contact-form__input" id="name" type="text" placeholder="Tu nombre" />
+        </div>
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="email">Correo</label>
+          <input class="contact-form__input" id="email" type="email" placeholder="correo@ejemplo.com" />
+        </div>
+      </div>
+      <div class="contact-form__field contact-form__field--full">
+        <label class="contact-form__label" for="subject">Asunto</label>
+        <input class="contact-form__input" id="subject" type="text" placeholder="Asunto del mensaje" />
+      </div>
+      <div class="contact-form__field contact-form__field--full">
+        <label class="contact-form__label" for="message">Mensaje</label>
+        <textarea class="contact-form__input contact-form__input--textarea" id="message" placeholder="Escribe tu mensaje aquí..."></textarea>
+      </div>
+      <button class="contact-form__btn" type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       5. ENCABEZADO DE SECCIÓN
+  ══════════════════════════════════════════ -->
+  <section class="demo-section">
+    <p class="demo-label">05 · Encabezado de Sección</p>
+
+    <div class="section-header">
+      <div class="section-header__icon">✦</div>
+      <div class="section-header__text">
+        <h2 class="section-header__title">Nuestros Servicios</h2>
+        <p class="section-header__subtitle">Soluciones diseñadas para impulsar tu negocio al siguiente nivel.</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
