@@ -1,0 +1,73 @@
+.house {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.box {
+    width: 60%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transform-style: preserve-3d;
+}
+
+.box:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+
+.box:hover p {
+    color: black;
+}
+
+
+.kitchen {
+    background: linear-gradient(145deg, #2ac94c, #1fa03b);
+    border: 5px solid #000;
+}
+.kitchen:hover {
+    background-image: url("img/images\ cocina.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.kitchen-item {
+    font-weight: bold;
+    color: #e00a27;
+}
+
+.bedroom {
+    background: linear-gradient(145deg, #0bd871, #09a85a);
+    border: 5px solid #c00;
+}
+
+.bedroom-item {
+    font-weight: bold;
+    color: #c0e00a;
+}
+.bedroom:hover {
+    background-image: url("img/avitacion.webp");
+    background-size: cover;
+    background-position: center;
+}
+.livingroom {
+    background: linear-gradient(145deg, #c3d80b, #9fb309);
+    border: 5px solid black;
+}
+
+.livingroom-item {
+    font-weight: bold;
+    color: #0e1eb1;
+}
+.livingroom:hover {
+    background-image: url("img/sala.jpg");
+    background-size: cover;
+    background-position: center;
+}
